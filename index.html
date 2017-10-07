@@ -8,42 +8,114 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-    </script>
+    </script><style>
+	body {
+    background-image: url("images/bg.jpg");
+    background-color: #cccccc;
+}
+	</style><link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.well{
+background-color:black;
+color:white;
+}
+.mySlides {display:none}
+</style>
   </head>
   <body>
   <div class="container">
     <div class="panel panel-default">
 	
-	<img src="images/dbsLogo.jpg" width="300px" alt="">
-      <center><div class="panel-heading"><h1>FLEXI CREDIT</h1>
+	<img src="images/dbsLogo.jpg" width="300px" alt=""><input type = "button"  class="btn btn-lg btn-success pull-right"  value="Login" align="right"/>
+	
+      <center>
+			<div class="panel-heading">
+			<h1 class="well ">Welcome to Modern Bank<img src="images/dbspin.png" width="" alt="">
+			</h1>
+	  <button></button>
      <!-- <div class="panel-body">
           Welcome to <%= title %>
     
     <br>
      <button data-toggle="collapse" class="btn btn-lg btn-success" data-target="#ops">Collapsible</button>
     <br> -->
-    <div id="ops">
+    
+<!--
+<div class="w3-content" style="max-width:800px">
+  <img class="mySlides" src="images/a.png" style="width:100%">
+  <img class="mySlides" src="images/b.jpg" style="width:100%">
+  <img class="mySlides" src="images/c.png" style="width:100%">
+</div>
 
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+  </div>
+  <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
+  <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
+  <button class="w3-button demo" onclick="currentDiv(3)">3</button> 
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-red";
+}
+</script>-->
+<div class="w3-content w3-section" style="max-width:1000px">
+
+  <img class="mySlides w3-animate-fading" src="images/a.png" style="width:100% height:100%">
+  <img class="mySlides w3-animate-fading" src="images/b.jpg" style="width:120% height:100%">
+  <img class="mySlides w3-animate-fading" src="images/c.png" style="width:120% height:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+</script>
+    <br><hr><div id="ops">
+
+
+
+    <h1></h1><br>
 
     <br><hr>
-
-
-
-    <h4 class="well">Login Here</h4><br>
-
-    <form action = '/create' method = "POST">
-
-      <label for = "username">UserName:</label>
-      <input type = "text" name="username"/></br>
-
-      <label for = "assword">Password:</label>
-      <input type = "password" name="password"/></br>
-
-      <input type = "submit"  class="btn btn-lg btn-success" value="Done"/></br></br>
-
-    </form>
-    <br><hr>
-</div></center>
+</div></center><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
   </div>
   </body>

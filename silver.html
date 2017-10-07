@@ -8,8 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-    </script>
-	<style>
+    </script><style>
 	body {
     background-image: url("images/bg.jpg");
     background-color: #cccccc;
@@ -42,27 +41,33 @@ color:white;
 
 
 
-    <h4 class="well">Customer Details&nbsp;<img src="images/dbspin.png" width="" alt=""></h4><br>
+    <h4 class="well">Available EMI plans&nbsp;<img src="images/dbspin.png" width="" alt=""></h4><br>
 
     <form action = '/create' method = "POST">
 
-      <label for = "customerid">Customer id:</label>
-      <input type = "text" name="customerid"/>
-
-      <label for = "amount">Amount:</label>
-      <input type = "text" name="amount" value="0"/>
-
-      <input type = "submit"  class="btn btn-lg btn-success" value="Search"/></br></br>
-
+      <table border="solid">
+	  <tr><th>Select Plan</th>
+	  <th>Tenure(in Months)</th>
+      <th>Rate</th></tr>
+	  
+	  <tr><td align="center"><div class="radio"><input type="radio" name="card" value="3"></div></td>
+	  <td align="center">3</td>
+      <td align="center">10%</td></tr>
+	  <tr><td align="center"><div class="radio"><input type="radio" name="card" value="6"></div></td>
+	  <td align="center">6</td>
+      <td align="center">10%</td></tr>
+	  <tr><td align="center"><div class="radio"><input type="radio" name="card" value="9"></div></td>
+	  <td align="center">9</td>
+      <td align="center">10%</td></tr>
+	  <tr><td align="center"><div class="radio"><input type="radio" name="card" value="12"></div></td>
+	  <td align="center">12</td>
+      <td align="center">12%</td></tr></table></br>
+	  </div>
+	  <input type="button" value="view loan schedule">
     </form>
-	<p id="totalAmount"><strong>Total Amount: </strong></p>
     <br><hr>
 </div></center>
-<br><br><br><br><br><br><br>
-    </div>
+    </div><br><br><br><br>
   </div>
-  <div class="page-module footer">
-
-</div>
   </body>
 </html>

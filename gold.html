@@ -8,8 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-    </script>
-	<style>
+    </script><style>
 	body {
     background-image: url("images/bg.jpg");
     background-color: #cccccc;
@@ -24,7 +23,10 @@ color:white;
   <div class="container">
     <div class="panel panel-default">
 	
-	<img src="images/dbsLogo.jpg" width="300px" alt="">
+	<img src="images/dbsLogo.jpg" width="150px" alt="">
+	      <input type = "button"  class="btn btn-lg btn-success pull-right"  value="Logout" align="right"/></br></br>
+<div class="clearfix"></div>
+
       <center><div class="panel-heading"><h1>FLEXI CREDIT</h1>
      <!-- <div class="panel-body">
           Welcome to <%= title %>
@@ -39,20 +41,30 @@ color:white;
 
 
 
-    <h4 class="well">Login Here&nbsp;<img src="images/dbspin.png" width="" alt=""></h4><br>
+    <h4 class="well">Available EMI plans&nbsp;<img src="images/dbspin.png" width="" alt=""></h4><br>
 
     <form action = '/create' method = "POST">
-
-      <label for = "username">UserName:</label>
-      <input type = "text" name="username"/></br>
-
-      <label for = "assword">Password:</label>
-      <input type = "password" name="password"/></br>
-
-      <input type = "submit"  class="btn btn-lg btn-success" value="Done"/></br></br>
-
+      
+      <table border="solid">
+	  <div class
+	  <tr><th>Select Plan</th>
+	  <th>Tenure(in Months)</th>
+      <th>Rate</th></tr>
+	  <tr><td align="center"><input type="radio"></td>
+	  <td align="center">3</td>
+      <td align="center">9%</td></tr>
+	  <tr><td align="center"><input type="radio"></td>
+	  <td align="center">6</td>
+      <td align="center">9%</td></tr>
+	  <tr><td align="center"><input type="radio"></td>
+	  <td align="center">9</td>
+      <td align="center">9%</td></tr>
+	  <tr><td align="center"><input type="radio"></td>
+	  <td align="center">12</td>
+      <td align="center">11%</td></tr></table></br>
+	  <input type="button" value="view loan schedule">
     </form>
-    <br><br><br><br><br><hr>
+    <br><hr>
 </div></center>
     </div>
   </div>
