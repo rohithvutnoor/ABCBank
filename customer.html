@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ABC Bank</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
+  </head>
+  <body>
+  <div class="container">
+    <div class="panel panel-default">
+	
+	<img src="images/dbsLogo.jpg" width="150px" alt="">
+	      <input type = "button"  class="btn btn-lg btn-success pull-right"  value="Logout" align="right"/></br></br>
+<div class="clearfix"></div>
+
+      <center><div class="panel-heading"><h1>FLEXI CREDIT</h1>
+     <!-- <div class="panel-body">
+          Welcome to <%= title %>
+    
+    <br>
+     <button data-toggle="collapse" class="btn btn-lg btn-success" data-target="#ops">Collapsible</button>
+    <br> -->
+    <div id="ops">
+
+
+    <br><hr>
+
+
+
+    <h4 class="well">Customer Details</h4><br>
+
+    <form action = '/create' method = "POST">
+
+      <label for = "customerid">Customer id:</label>
+      <input type = "text" name="customerid"/>
+
+      <label for = "amount">Amount:</label>
+      <input type = "text" name="amount" value="0"/>
+
+      <input type = "submit"  class="btn btn-lg btn-success" value="Search"/></br></br>
+
+    </form>
+    <br><hr>
+</div></center>
+    </div>
+  </div>
+  </body>
+</html>
